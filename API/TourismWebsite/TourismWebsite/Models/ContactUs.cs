@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TourismWebsite.Models;
 
-public partial class ContactU
+public partial class ContactUs
 {
     public int ContactUsId { get; set; }
 

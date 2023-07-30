@@ -17,7 +17,7 @@ public partial class TourismWebsiteContext : DbContext
 
     public virtual DbSet<Booking> Bookings { get; set; }
 
-    public virtual DbSet<ContactU> ContactUs { get; set; }
+    public virtual DbSet<ContactUs> ContactUs { get; set; }
 
     public virtual DbSet<Feedback> Feedbacks { get; set; }
 
@@ -59,9 +59,9 @@ public partial class TourismWebsiteContext : DbContext
                 .HasConstraintName("BookingsUserId");
         });
 
-        modelBuilder.Entity<ContactU>(entity =>
+        modelBuilder.Entity<ContactUs>(entity =>
         {
-            entity.HasKey(e => e.ContactUsId).HasName("PK__ContactU__E10B7AC8B533D78B");
+            entity.HasKey(e => e.ContactUsId).HasName("PK__ContactUs__E10B7AC8B533D78B");
         });
 
         modelBuilder.Entity<Feedback>(entity =>
