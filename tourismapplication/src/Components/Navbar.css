@@ -1,0 +1,15 @@
+.nav-item{
+    
+    margin-right: 0%;
+}
+  
+  .nav-link {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffc107; /* Change the hover color as per your design */
+  }
