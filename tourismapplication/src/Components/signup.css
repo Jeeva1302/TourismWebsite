@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+.signup_container {
+    display: flex;
+    background-color: #f5f5f5;
+    width: 100%;
+    max-width: 1150px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0px 15px 0px 15px;
+}
+
+.signup_container img {
+    border-radius: 0px 0px 0px 15px;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-group .input-field {
+    position: relative;
+    width: calc(100% - 50px);
+    height: 50px;
+    border: 1px solid #195b99;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 0px 20px;
+    border-radius: 0px 15px 0px 15px;
+    background-color: transparent;
+}
+
+.input-field:focus {
+    border: 1px solid #04724D;
+}
+
+.role-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 90%;
+}
+
+
+.submit {
+    width: 30%;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    border-radius: 0px 15px 0px 15px;
+    background-color: #195b99;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+.submit:hover {
+    background-color: #04724D;
+}
+
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .signup_container {
+        flex-direction: column;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    .signup_container img {
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .form-group {
+        width: 100%;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .form-group .input-field {
+        width: 90%;
+        border-radius: 0px 15px 0px 15px;
+    }
+
+    .submit {
+        margin-bottom: 10px;
+        width: 40%;
+    }
+}
